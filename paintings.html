@@ -24,36 +24,45 @@ frontpage: false
 
 <!-- Main -->
 <div id="main" class="alt">
+	
+		<section id="one">
+			<div class="inner">
+				<header class="major">
+					<h2>Ameture Gallery</h2>
+				</header>
+				<p>
+
+				</p>
+			</div>
+		</section>
           
               <section class="gallery-block compact-gallery">
-        <div class="container">
-            <div class="heading">
-                <h2>Ameture Gallery</h2>
-            </div>
-			
-            <div class="row no-gutters">
-			
-			 
-			 {% for image in site.static_files %}
-				{% if image.path contains 'images/paintings' %}
-				
-					<div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="../img/image1.jpg">
-                       
-						<img class="img-fluid image" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-                        <span class="description">
-                            <span class="description-heading">{{image.name}}</span>
-                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        </span>
-                    </a>
-                </div>
-					
-				{% endif %}
-			{% endfor %}
-				
-            </div>
-        </div>
-    </section>
+			<div class="container">
+			    <div class="heading">
+				<h2>Ameture Gallery</h2>
+			    </div>
+
+			    <div class="row no-gutters">
+
+				 {% for image in site.static_files %}
+					{% if image.path contains 'images/paintings' %}
+						<div class="col-md-6 col-lg-4 item zoom-on-hover">
+						    <a class="lightbox" href="{{ image.path }}">
+
+							<img class="img-fluid image" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+							<span class="description">
+							 <span class="description-heading">{{image.name}}</span>
+							 <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+							</span>
+						    </a>
+						</div>
+
+					{% endif %}
+				{% endfor %}
+
+			    </div>
+			</div>
+		    </section>
           
        
           </div>

@@ -42,7 +42,7 @@ frontpage: false
 				<div class="row gtr-50 gtr-uniform">
 					
 					{% for image in site.static_files %}
-						{% if image.path contains 'images/paintings' %}
+						{% if image.path contains 'images' %}
 							<div class="col-md-6 col-lg-4 item zoom-on-hover"> <span class="image fit">
 							    <a class="lightbox" href="{{ image.path }}">
 

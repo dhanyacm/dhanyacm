@@ -39,26 +39,27 @@ frontpage: false
               <section class="gallery-block compact-gallery">
 			<div class="container">
 			   <div class="box alt">
+				   
 				<div class="row gtr-50 gtr-uniform">
 					
 					{% for image in site.static_files %}
 						{% if image.path contains 'images/paintings' %}					
 					               <div class="col-4"><span class="image fit">				       
-							       <img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></span></div>
-								<span class="description">
+							       <img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></span>
+					                </div>
+							<span class="description">
 								 <span class="description-heading">{{image.name}}</span><br>
 								 <span class="description-body"> </span>
-								</span>						  
-							</div>
+							</span>						  
+							
 						{% endif %}
 					{% endfor %}					
 					
 				</div>
-			  </div>	
 				
-				
-			  </div>
-		    </section>
+			  </div>				
+		     </div>
+	     </section>
           
        
           </div>

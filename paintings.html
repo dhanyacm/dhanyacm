@@ -46,15 +46,8 @@ frontpage: false
 						{% if image.path contains 'images/paintings' %}					
 					               <div class="col-4"><span class="image fit">				       
 							       <img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></span>
-					                </div>
-							
-							    <span class="description">
-																    
-								 <span class="description-heading">{{image.basename}}</span><br>
-								 <span class="description-body">{{ image.basename}} </span>								
-								
-							    </span>
-						
+					                </div>				
+							    					
 							
 						{% endif %}
 					{% endfor %}					

@@ -22,3 +22,33 @@ frontpage: false
 							</div>
 						</div>
 					</section>
+
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Hobby Learning</h2>
+									</header>
+									<p>										
+										These are few items I made. Tutorial included
+									</p>
+								</div>
+							</section>
+						
+						 <section class="gallery-block compact-gallery">
+							<div class="container">
+							   <div class="box alt">
+
+								 {% for post in site.posts %}							
+									<img src={{ post.icon }} alt="Art" />
+									<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br>
+									   <span style="color:#555;">{{ post.date | date_to_string }}</span>  
+									{{ post.content }} 							
+								  {% endfor %}
+								   
+							  </div>				
+							</div>
+						 </section>	 
+					</div>

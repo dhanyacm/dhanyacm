@@ -41,7 +41,8 @@ frontpage: false
 							  <ul id="easyPaginate">
 
 							    {% for post in site.posts %}	
-							 	<section>									
+								{% capture thecycle %}{% cycle 'spotlights', '' %}{% endcapture %}  
+							 	<section class= {{ thecycle }}>									
 									<div class="content">
 										<div class="inner">
 											<header class="major">

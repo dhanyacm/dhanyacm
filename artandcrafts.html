@@ -47,12 +47,12 @@ frontpage: false
 										<div class="inner">
 											<header class="major">
 												
-													<h3><a href="{{ post.url }}" {{ post.title }}</a></h3>											
+													<h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>											
 													
 													
 											</header>
 									
-									                <img class="image" src={{ post.icon }} alt="Art" data-position="center center" />
+									                <img src={{ post.icon }} alt="Art" class="image" width="50%" />
 												
 											<p>
 												{{ post.content }}

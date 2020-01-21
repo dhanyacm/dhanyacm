@@ -1,19 +1,17 @@
----
-layout: default
-title: Arts Page
-id: arts
-frontpage: false
----
-
-<div class="news">
+{% include header.html %}
+ 
 	<div class="container"> 
 		<h3 class="agileits-title">{{ page.title }}</h3> 
-    
-       		<img src={{ post.icon }} alt="art" width="50%" class="img-circle" />
+
+		<img src={{ post.icon }} alt="art" width="50%" class="img-circle" />
 
 		<div class="post">
 		  {{ content }}
 		</div>
-     
-      	</div>
-</div>
+
+	</div>
+	
+
+{% include footer.html %}
+
+

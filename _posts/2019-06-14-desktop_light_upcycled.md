@@ -1,7 +1,7 @@
 ---
 layout: art
 title: "Upcycled Pickle Jar"
-icon: /images/art/piclejar.jpg
+icon: /images/art/picklejar.jpg
 ---
 
 1) Wash and clean a widemouthed jar and remove all labels

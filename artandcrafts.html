@@ -39,9 +39,11 @@ frontpage: false
 						
 						 <section class="gallery-block compact-gallery">
 							<div class="container">								
-							   <div class="box alt">								   
+							   <div class="box alt">	
+								
+							       <ul id="easyPaginate">
 
-								 {% for post in site.post %}	
+								 {% for post in site.posts %}	
 								   
 								   <p> Test container </p>
 								   
@@ -50,7 +52,7 @@ frontpage: false
 									   <span style="color:#555;">{{ post.content }}</span>  
 																
 								  {% endfor %}
-								   
+								</ul>	
 							  </div>				
 							</div>
 						 </section>	 

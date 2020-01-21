@@ -38,21 +38,48 @@ frontpage: false
 							</section>
 						
 						 <section class="gallery-block compact-gallery">
-							<div class="container">								
+							  <ul id="easyPaginate">
+
+							    {% for post in site.posts %}	
+							 	<section>
+									<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} class="image" style="overflow: auto;">
+										<img src={{ post.icon }} alt="Art" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>{{ post.title }}</h3>
+											</header>
+											<p>
+												{{ post.content }}
+											</p>											
+										</div>
+									</div>
+								</section>
+								  
+							  {% endfor %}
+							  </ul>	
+							 
+							 
+							<!--<div class="container">								
 							   <div class="box alt">	
-								
+							      <div class="row gtr-50 gtr-uniform">
+								      
 							       <ul id="easyPaginate">
 
 								 {% for post in site.posts %}	
-									<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br>
-								       
-								        <img src={{ post.icon }} alt="Art" />
-								       
-									<span>{{ post.content }}</span>  
-																
+								       <div class="col-4">
+										<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br>
+
+										<img src={{ post.icon }} alt="Art" />
+
+										<span>{{ post.content }}</span>  
+									</div>							
 								  {% endfor %}
 								</ul>	
+								      
+							    </div>      
 							  </div>				
-							</div>
+							</div>  -->
 						 </section>	 
 					</div>

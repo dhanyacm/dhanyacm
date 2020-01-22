@@ -5,10 +5,10 @@ plugins:
   - jekyll-sitemap
 baseurl: ""
 url: http://dhanyacm.github.io/
-permalink: /404.html
 include: ["_pages"]
 paginate: 5
 paginate_path: "/blog/page:num/"
 permalink: /:title/
+permalink: /404.html
 
 

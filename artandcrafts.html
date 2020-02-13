@@ -40,7 +40,7 @@ frontpage: false
 						 <section class="gallery-block compact-gallery">
 							  <ul id="easyPaginate">
 
-							    {% for post in site.posts %}	
+							    {% for post in site.categories.crafts %}									
 								{% capture thecycle %}{% cycle 'spotlights', '' %}{% endcapture %}  
 							 	<section class="{{ thecycle }}">									
 									<div class="content">

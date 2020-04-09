@@ -6,7 +6,7 @@ id: paintings
 frontpage: false
 ---
 
-                          		<section id="banner" class="style2">
+<section id="banner" class="style2">
 						<div class="inner">
 							<span class="image">
 								<img src="images/pic04.jpg" alt="" />
@@ -42,18 +42,20 @@ frontpage: false
 				   
 				<div class="row gtr-50 gtr-uniform">
 					
-					<!--{% for image in site.static_files %}  -->
-					{% for post in site.categories.crafts %}	
-									
-					       <div class="col-4"><span class="image fit">				       
-						       <img src={{ post.icon }} alt="image" /></span>
-					       </div>
-
-					       <span class="description">
-						    <span class="description-heading">{{ post.title }}</span><br>
-						    <span class="description-body">{{ post.content }} </span>
-					       </span>
-					
+					{% for image in site.static_files %}
+						{% if image.path contains 'images/paintings' %}					
+					               <div class="col-4"><span class="image fit">				       
+							       <img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></span>
+					                </div>
+							<!-- 
+							 <span class="description">
+								 
+							    <span class="description-heading">{{ site.baseurl }}/images/paintings/desc/{{image.basename}}</span><br>
+							    <span class="description-body">{{ image.basename}} </span>								
+ 							  </span>
+							 -->   					
+							
+						{% endif %}
 					{% endfor %}					
 					
 				</div>

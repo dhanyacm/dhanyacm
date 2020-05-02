@@ -7,6 +7,5 @@ baseurl: ""
 url: https://dhanyacm.com/
 include: ["_pages"]
 paginate: 5
-permalink: /404.html
 
 

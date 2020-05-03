@@ -1,5 +1,5 @@
 ---
-layout: art
+layout: post
 title: "Upcycled Beer Bottle"
 icon: /images/art/beerbottle.jpg
 ---

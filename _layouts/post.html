@@ -4,31 +4,17 @@
  
  
 	<div class="container"> 
-		<h3 class="agileits-title">{{ page.title }}</h3> 
-
-		<img src={{ post.icon }} alt="art" width="50%" class="img-circle" />
-
-		<div class="post">
-		  {{ content }}
-		</div>
-
-	</div>
-
-	<div class="inner">
 		<header class="major">
-
-				<h3> {{ post.title }} </h3>											
-
-
+			<h3> {{ post.title }} </h3>								
 		</header>
 
 		<img src={{ post.icon }} alt="Art" class="image" width="80%" />
 
-		<p>
-			{{ post.content }}
-		</p>											
-	</div>
-	
+		<div class="post">
+		  {{ post.content }}
+		</div>
+
+	</div>	
 
 {% include footer.html %}
 

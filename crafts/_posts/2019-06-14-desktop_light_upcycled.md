@@ -1,5 +1,5 @@
 ---
-layout: art
+layout: post
 title: "Upcycled Pickle Jar"
 icon: /images/art/picklejar.jpg
 ---

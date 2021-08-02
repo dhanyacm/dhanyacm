@@ -1,6 +1,9 @@
+.panel {  
+    background-color: #53e3fb;
+}
 .panel-default>.panel-heading {
   color: #fff;
-  background-color: #rgba(212, 212, 255, 0.035);
+  background-color: #53e3fb;
   border-color: #242943;
   padding: 0;
   -webkit-user-select: none;

@@ -1,9 +1,9 @@
 .panel {  
-    background-color: #53e3fb;
+    background: rgba(212, 212, 255, 0.01);
 }
 .panel-default>.panel-heading {
   color: #fff;
-  background-color: #53e3fb;
+  background: rgba(212, 212, 255, 0.035);
   border-color: #242943;
   padding: 0;
   -webkit-user-select: none;

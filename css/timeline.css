@@ -1,20 +1,11 @@
-body {
-  color: #6a6c6f;
-  background-color: #f1f3f6;
-  margin-top:30px;
-}
-
 .container {
   max-width: 960px;
 }
 
-
-/* */
-
 .panel-default>.panel-heading {
-  color: #333;
-  background-color: #fff;
-  border-color: #e4e5e7;
+  color: #fff;
+  background-color: #rgba(212, 212, 255, 0.035);
+  border-color: #242943;
   padding: 0;
   -webkit-user-select: none;
   -moz-user-select: none;

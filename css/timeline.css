@@ -48,3 +48,8 @@
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
+
+.bg-card {  
+    background-color: #8d82c4;
+}

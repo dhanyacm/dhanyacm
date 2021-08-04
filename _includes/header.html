@@ -7,7 +7,7 @@
 		<meta name="description" content="Website of Dhanya CM">
 		<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 	
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{{site.baseurl}}/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&display=swap" rel="stylesheet">
 	
 		{% if page.id == "paintings" %} 
@@ -23,8 +23,10 @@
 		{% endif %}
 	
 		<link rel="stylesheet" href="{{site.baseurl}}/css/main.css" />
-		<noscript><link rel="stylesheet" href="{{site.baseurl}}/css/noscript.css" /></noscript>
 	
+	        <link rel="preload" href="{{site.baseurl}}/css/noscript.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="{{site.baseurl}}/css/noscript.css" /></noscript>
+
 </head>
 
 <body class="is-preload" id="{{ page.id }}">

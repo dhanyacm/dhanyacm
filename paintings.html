@@ -39,7 +39,41 @@ frontpage: false
               <section class="gallery-block compact-gallery">
 			<div class="container">
 			   <div class="box alt">
-				   
+
+				   <div class="gallery-carousel">
+
+  <!-- Main carousel -->
+  <div class="carousel-slides">
+    {% for painting in site.data.paintings %}
+      <div class="carousel-slide" id="slide-{{ forloop.index }}">
+        <img
+          src="{{ site.baseurl }}/images/paintings/{{ painting.file }}"
+          alt="{{ painting.title }}"
+        />
+
+        <div class="caption">
+          <h3>{{ painting.title }}</h3>
+          <p>{{ painting.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Thumbnails -->
+  <div class="carousel-thumbs">
+    {% for painting in site.data.paintings %}
+      <a href="#slide-{{ forloop.index }}" class="thumb">
+        <img
+          src="{{ site.baseurl }}/images/paintings/{{ painting.file }}"
+          alt="{{ painting.title }}"
+        />
+      </a>
+    {% endfor %}
+  </div>
+
+</div>
+
+				<!--    
 				<div class="row gtr-50 gtr-uniform">
 					
 					{% for image in site.static_files %}
@@ -47,19 +81,19 @@ frontpage: false
 					               <div class="col-4"><span class="image fit">				       
 							       <img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></span>
 					                </div>
-							<!-- 
+							
 							 <span class="description">
 								 
 							    <span class="description-heading">{{ site.baseurl }}/images/paintings/desc/{{image.basename}}</span><br>
 							    <span class="description-body">{{ image.basename}} </span>								
  							  </span>
-							 -->   					
+							   					
 							
 						{% endif %}
 					{% endfor %}					
 					
 				</div>
-				
+				 -->
 			  </div>				
 		     </div>
 	     </section>
